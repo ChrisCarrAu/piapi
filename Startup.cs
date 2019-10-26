@@ -19,7 +19,11 @@ namespace piapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ILedService, LedService>();
+            var connectionString = Configuration["IoTHub:ConnectionString"];
+            var deviceId = Configuration["IoTHub:DeviceId"];
+
+            services.AddTransient<IIotHub>(sp => new IotHub(connectionString, deviceId));
+            services.AddTransient<ILedService, LedService>();
             
             services.AddControllers();
         }

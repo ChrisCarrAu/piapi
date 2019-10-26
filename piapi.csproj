@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Iot.Device.Bindings" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Azure.Devices" Version="1.18.1" />
     <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.21.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
