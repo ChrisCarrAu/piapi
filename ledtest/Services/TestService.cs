@@ -4,7 +4,7 @@ namespace SimpleLed.Services
 {
     public class TestService : ITestService
     {
-        public void DoSomethingUseful()
+        public void Process()
         {
             Console.WriteLine("Hello World!");
         }

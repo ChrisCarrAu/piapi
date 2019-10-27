@@ -13,7 +13,7 @@ namespace SimpleLed
 
         public void Run()
         {
-            _testService.DoSomethingUseful();
+            _testService.Process();
         }
     }
 }
