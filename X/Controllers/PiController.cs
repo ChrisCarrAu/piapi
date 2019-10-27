@@ -20,7 +20,7 @@ namespace piapi.Controllers
         }
 
         [HttpGet]
-        public async Task<GpioModel> Get() => new GpioModel
+        public async Task<IotHubModel> Get() => new IotHubModel
         {
             LedIlluminated = await _ledService.GetIlluminatedAsync()
         };
