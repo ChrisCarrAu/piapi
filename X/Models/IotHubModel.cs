@@ -2,7 +2,7 @@ using System;
 
 namespace piapi.Models
 {
-    public class GpioModel
+    public class IotHubModel
     {
         public bool LedIlluminated { get; set; }
     }
